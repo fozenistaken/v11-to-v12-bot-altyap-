@@ -15,7 +15,7 @@ const snekfetch = require('snekfetch');
 
 const app = express();
 app.get("/", (request, response) => {
-  console.log(Date.now() + "Paradox Code Pingledi");
+  console.log(Date.now() + "PreX Code Pingledi");
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
@@ -127,53 +127,9 @@ client.on('error', e => {
 });
 
 client.login(ayarlar.token);
-
-//Eklendim-Atıldım/
-client.on('guildDelete', guild => {
-
-let embed = new Discord.MessageEmbed()
-
-.setColor("RED")
-.setTitle(" Bot Kickledi ")
-.addField("Sunucu Adı:", guild.name)
-.addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
-
-   client.channels.cache.get('780816057857998899').send(embed);
-
-});
-
-
-client.on('guildCreate', guild => {
-
-let embed = new Discord.MessageEmbed()
-
-.setColor("GREEN")
-.setTitle(" Bot Eklendi ")
-.addField("Sunucu Adı:", guild.name)
-.addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
-
-   client.channels.cache.get('780816057857998899').send(embed);
-
-}); 
-
-client.on('message', msg => {
-let sa = msg.content.toLowerCase()
-if (sa === 'lie yardım') {
-  const embed = new Discord.MessageEmbed()
-  .setColor('#d295a4')
-  .setTitle('lie')
-  .setDescription(`bir komut çalıştırmak için lie komut
-  Toplam 6 komut bulunuyor.
-  :flag_us: I'm so sorry, there is no English language option. Maybe soon ;)
-  
-  ***Komutlar:***
-  yardım, eval, hata-bildir, istatistik, uptime, v11tov12
-  
- ***Linkler:***
-Website: Çok yakında!
-Destek Sunucum: [Tıkla](link)!
-Invite: [Tıkla!](link)`)
-msg.channel.send(embed)
-   }
-})
-
+   
+   
+   
+   
+   
+   

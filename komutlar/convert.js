@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const db = require("quick.db");
 const hast = require("hastebin-gen");
+const m = require("nodme")
 module.exports.run = async (client, message, args) => {
   let v11Kod = args.slice(0).join(" ");
   if (!v11Kod) {
@@ -13,7 +14,8 @@ module.exports.run = async (client, message, args) => {
       "Kodun 1800 Karakterden Fazla Bölerek Yazarmısın ?"
     );
   }
-  let v12kod = v11Kod
+  let ilkadım = m.replace(v11Kod)
+  let v12kod = ilkadım
     .split("get")
     .join("cache.get")
     .split("addRole")

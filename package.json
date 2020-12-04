@@ -4,10 +4,10 @@
   "//3": "updating this file will download and update your packages",
   "name": "hello-express",
   "version": "0.0.1",
-  "description": "v12 ke",
-  "main": "server.js",
+  "description": "fozen",
+  "main": "fozen.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node fozen.js"
   },
   "dependencies": {
     "express": "^4.17.1",

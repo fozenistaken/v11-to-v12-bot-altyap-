@@ -16,8 +16,8 @@ module.exports = client => {
   );
   client.user.setStatus("online");
   var oyun = [
-       "d!çevir <Kod>",
-       "Sende Kodunu çevir!"
+       "fozen is taken",
+       "telif time gliba"
   ];
 
   setInterval(function() {
